@@ -23,7 +23,7 @@ user_detail_view = UserDetailView.as_view()
 
 class UserUpdateView(LoginRequiredMixin, UpdateView):
     fields = [
-        "name",
+        "name", "bio"
     ]
 
     # We already imported user in the View code above,
@@ -40,7 +40,6 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_object(self):
         # Only Get the User Record for the
-        #   User Making the Request
         return User.objects.get(
             username=self.request.user.username
         )
