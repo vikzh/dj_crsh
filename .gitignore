@@ -5,3 +5,4 @@
 /everycheese.db
 /htmlcov
 /.coverage
+__pycache__
