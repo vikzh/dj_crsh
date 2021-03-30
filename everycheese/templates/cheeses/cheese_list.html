@@ -5,9 +5,9 @@
 {% block content %}
     <h2>Cheeses list</h2>
     <ul>
-        <li><a href="{% url 'home' %}"></a></li>
-        <li><a href="{% url 'about' %}"></a></li>
-        <li><a href="{% url 'cheeses:list'%}"></a></li>
+        <li><a href="{% url 'home' %}"></a>Home</li>
+        <li><a href="{% url 'about' %}"></a>About</li>
+        <li><a href="{% url 'cheeses:list'%}"></a>Cheeses list</li>
     </ul>
     <ul>
         {% for cheese in cheese_list %}
