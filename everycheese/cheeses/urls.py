@@ -5,5 +5,9 @@ app_name = "cheeses"
 urlpatterns = [
     path(route='',
          view=views.CheesesListView.as_view(),
-         name='list')
+         name='list'),
+    path(
+        route='<slug:slug>/',
+        view=views.CheeseDetailView.as_view(),
+        name='detail')
 ]
