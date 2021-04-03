@@ -2,6 +2,7 @@ import pytest
 from everycheese.cheeses.models import Cheese
 from .factories import CheeseFactory
 
+
 pytestmark = pytest.mark.django_db
 
 
